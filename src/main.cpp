@@ -1,4 +1,9 @@
 #include <Arduino.h>
+#include <math.h>
+void initLed()
+{
+  pinMode(LED_BUILTIN, OUTPUT);
+}
 void led(int velocidad)
 {
   digitalWrite(LED_BUILTIN, HIGH);
@@ -8,12 +13,9 @@ void led(int velocidad)
 }
 void setup()
 {
-  pinMode(LED_BUILTIN, OUTPUT);
+  
 }
 
 void loop()
 {
-  led(100);
-  led(1000);
-  led(500);
 }
