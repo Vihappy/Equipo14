@@ -1,5 +1,4 @@
 #include <Arduino.h>
-#include <math.h>
 void initLed()
 {
   pinMode(LED_BUILTIN, OUTPUT);
